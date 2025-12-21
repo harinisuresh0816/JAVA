@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String a= sc.nextLine();
+        char b;
+        int letters=0;
+        int digits=0;
+        int special=0;
+        for(int i=0;i< a.length();i++){
+            b=a.charAt(i);
+            if(b>='A'&&b<='z'){
+                letters++;
+            }
+            else if(b>='0'&&b<='9'){
+                digits++;
+            }
+            else{
+                special++;
+            }
+        
+        }
+        System.out.println(letters);
+        System.out.println(digits);
+        System.out.println(special);
+
+    }
+}
