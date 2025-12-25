@@ -1,0 +1,10 @@
+class Main {
+    public static void main(String[] args) {
+        String a="hardwork never fails";
+        int count=0;
+        for(char n:a.toCharArray()){
+            count++;
+        }
+        System.out.println(count);
+    }
+}
